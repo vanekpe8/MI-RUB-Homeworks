@@ -13,7 +13,7 @@ V tomto repozitáři ukládám své vypracované domácí úkoly.
 Úloha 4
 ========
   Pokud jsem správně pochopil zadání této úlohy, měla být výsledkem aplikace, která jakoukoliv vstupní zprávu dešifruje
-  tak, že ASCII kód každého znaku sníží o konstantu 7 (to je klíč, který lze vypozorovat ze vzorového vstupu a výstupu).
+  tak, že ASCII kód každého znaku sníží o konstantu 7 (to je klíč, který lze vypozorovat ze vzorového vstupu a   výstupu).
   
   Aplikaci jsem si dovolil trochu rozšířit. Je-li jako argument příkazové řádky zadána cesta k souboru se zašifrovanou
   zprávou, aplikace ji dešifruje monoalfabetickou substituční šifrou s klíčem 7 (splňuje vzorové zadání). Volitelně,

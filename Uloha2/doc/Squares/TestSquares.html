@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Squares::TestSquares</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../test/SquaresTest_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/SquaresTest.rb">test/SquaresTest.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-test_intersection">#test_intersection</a></li>
+					
+					<li><a href="#method-i-test_point">#test_point</a></li>
+					
+					<li><a href="#method-i-test_square_area">#test_square_area</a></li>
+					
+					<li><a href="#method-i-test_square_contains_point%3F">#test_square_contains_point?</a></li>
+					
+					<li><a href="#method-i-test_square_corners">#test_square_corners</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Squares.html">Squares</a></li>
+				
+					<li><a href="../Squares/MainClass.html">Squares::MainClass</a></li>
+				
+					<li><a href="../Squares/Point.html">Squares::Point</a></li>
+				
+					<li><a href="../Squares/Square.html">Squares::Square</a></li>
+				
+					<li><a href="../Squares/TestSquares.html">Squares::TestSquares</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Squares::TestSquares</h1>
+
+		<div id="description">
+			<p>
+This class contains various tests for <a
+href="../Squares.html">Squares</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="test-intersection-method" class="method-detail ">
+				<a name="method-i-test_intersection"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_intersection</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tests intersection method of <a href="Square.html">Square</a> class
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-intersection-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/SquaresTest.rb, line 48</span>
+48:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_intersection</span>
+49:       <span class="ruby-identifier">s1</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>,<span class="ruby-value">4</span>)
+50:       <span class="ruby-identifier">s2</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>,<span class="ruby-value">6</span>)
+51:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">16</span>, <span class="ruby-identifier">s1</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s2</span>))
+52:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">16</span>, <span class="ruby-identifier">s2</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s1</span>))
+53:       
+54:       <span class="ruby-identifier">s1</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>,<span class="ruby-value">4</span>)
+55:       <span class="ruby-identifier">s2</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>,<span class="ruby-value">4</span>)
+56:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">s1</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s2</span>))
+57:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">s2</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s1</span>))
+58:       
+59:       <span class="ruby-identifier">s1</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>,<span class="ruby-value">6</span>)
+60:       <span class="ruby-identifier">s2</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">9</span>,<span class="ruby-value">4</span>)
+61:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4</span>, <span class="ruby-identifier">s1</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s2</span>))
+62:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4</span>, <span class="ruby-identifier">s2</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s1</span>))
+63:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-point-method" class="method-detail ">
+				<a name="method-i-test_point"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_point</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tests properties of <a href="Point.html">Point</a> class
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-point-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/SquaresTest.rb, line 11</span>
+11:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_point</span>
+12:       <span class="ruby-identifier">p</span> = <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>,<span class="ruby-value">7</span>)
+13:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">3</span>, <span class="ruby-identifier">p</span>.<span class="ruby-identifier">x</span>)
+14:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">7</span>, <span class="ruby-identifier">p</span>.<span class="ruby-identifier">y</span>)
+15:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-square-area-method" class="method-detail ">
+				<a name="method-i-test_square_area"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_square_area</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tests area method of <a href="Square.html">Square</a> class
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-square-area-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/SquaresTest.rb, line 18</span>
+18:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_square_area</span>
+19:       <span class="ruby-identifier">s</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">10</span>)
+20:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">100</span>, <span class="ruby-identifier">s</span>.<span class="ruby-identifier">area</span>)
+21:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-square-contains-point--method" class="method-detail ">
+				<a name="method-i-test_square_contains_point%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_square_contains_point?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tests method contains_point? of <a href="Square.html">Square</a> class
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-square-contains-point--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/SquaresTest.rb, line 35</span>
+35:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_square_contains_point?</span>
+36:       <span class="ruby-identifier">s</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">10</span>)
+37:       <span class="ruby-identifier">points_inside</span> = [<span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>,<span class="ruby-value">0</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>, <span class="ruby-value">2</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">4</span>,<span class="ruby-value">5</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">1</span>)]
+38:       <span class="ruby-identifier">points_outside</span> = [<span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">6</span>,<span class="ruby-value">6</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">10</span>,<span class="ruby-value">0</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">7</span>,<span class="ruby-value">2</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>,<span class="ruby-value">6</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">6</span>,<span class="ruby-value">0</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>,<span class="ruby-value">6</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">6</span>,<span class="ruby-value">0</span>)]
+39:       <span class="ruby-identifier">points_inside</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">point</span><span class="ruby-operator">|</span>
+40:         <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">true</span>, <span class="ruby-identifier">s</span>.<span class="ruby-identifier">contains_point?</span>(<span class="ruby-identifier">point</span>))
+41:       <span class="ruby-keyword kw">end</span>
+42:       <span class="ruby-identifier">points_outside</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">point</span><span class="ruby-operator">|</span>
+43:         <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">false</span>, <span class="ruby-identifier">s</span>.<span class="ruby-identifier">contains_point?</span>(<span class="ruby-identifier">point</span>))
+44:       <span class="ruby-keyword kw">end</span>
+45:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-square-corners-method" class="method-detail ">
+				<a name="method-i-test_square_corners"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_square_corners</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tests corners method of <a href="Square.html">Square</a> class
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-square-corners-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/SquaresTest.rb, line 24</span>
+24:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_square_corners</span>
+25:       <span class="ruby-identifier">s</span> = <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>,<span class="ruby-value">0</span>,<span class="ruby-value">10</span>)
+26:       <span class="ruby-identifier">correct_results</span> = [<span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>( <span class="ruby-value">5</span>,<span class="ruby-value">5</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>), <span class="ruby-constant">Point</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>,<span class="ruby-value">5</span>)]
+27:       <span class="ruby-identifier">results</span> = <span class="ruby-identifier">s</span>.<span class="ruby-identifier">corners</span>
+28:       <span class="ruby-identifier">results</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">point</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+29:         <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">correct_results</span>[<span class="ruby-identifier">index</span>].<span class="ruby-identifier">x</span>, <span class="ruby-identifier">point</span>.<span class="ruby-identifier">x</span>)
+30:         <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">correct_results</span>[<span class="ruby-identifier">index</span>].<span class="ruby-identifier">y</span>, <span class="ruby-identifier">point</span>.<span class="ruby-identifier">y</span>)
+31:       <span class="ruby-keyword kw">end</span>
+32:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

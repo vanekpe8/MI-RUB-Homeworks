@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Squares::MainClass</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../bin/Uloha2_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="bin/Uloha2.rb">bin/Uloha2.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-is_number%3F">#is_number?</a></li>
+					
+					<li><a href="#method-i-read_input">#read_input</a></li>
+					
+					<li><a href="#method-i-run">#run</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Squares.html">Squares</a></li>
+				
+					<li><a href="../Squares/MainClass.html">Squares::MainClass</a></li>
+				
+					<li><a href="../Squares/Point.html">Squares::Point</a></li>
+				
+					<li><a href="../Squares/Square.html">Squares::Square</a></li>
+				
+					<li><a href="../Squares/TestSquares.html">Squares::TestSquares</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Squares::MainClass</h1>
+
+		<div id="description">
+			<p>
+This class encapsulates the main entry point to the application
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="run-method" class="method-detail ">
+				<a name="method-i-run"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Calculates union of two squares
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-source">
+<pre>
+    <span class="ruby-comment cmt"># File bin/Uloha2.rb, line 12</span>
+12:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run</span>
+13:       <span class="ruby-identifier">messages</span> = []
+14:       <span class="ruby-identifier">messages</span>[<span class="ruby-value">0</span>] = <span class="ruby-value str">&quot;Zadejte delku hrany prvniho ctverce: &quot;</span>
+15:       <span class="ruby-identifier">messages</span>[<span class="ruby-value">1</span>] = <span class="ruby-value str">&quot;Zadejte x-ovou souradnici stredu prvniho ctverce: &quot;</span>
+16:       <span class="ruby-identifier">messages</span>[<span class="ruby-value">2</span>] = <span class="ruby-value str">&quot;Zadejte y-ovou souradnici stredu prvniho ctverce: &quot;</span>
+17:       <span class="ruby-identifier">messages</span>[<span class="ruby-value">3</span>] = <span class="ruby-value str">&quot;Zadejte delku hrany druheho ctverce: &quot;</span>
+18:       <span class="ruby-identifier">messages</span>[<span class="ruby-value">4</span>] = <span class="ruby-value str">&quot;Zadejte x-ovou souradnici stredu druheho ctverce: &quot;</span>
+19:       <span class="ruby-identifier">messages</span>[<span class="ruby-value">5</span>] = <span class="ruby-value str">&quot;Zadejte y-ovou souradnici stredu druheho ctverce: &quot;</span>
+20: 
+21:       <span class="ruby-keyword kw">begin</span>
+22:         <span class="ruby-identifier">s1</span> = <span class="ruby-identifier">read_input</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">messages</span>)
+23:         <span class="ruby-identifier">s2</span> = <span class="ruby-identifier">read_input</span>(<span class="ruby-value">3</span>, <span class="ruby-identifier">messages</span>)
+24:       <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ex</span>
+25:         <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;An error occured: #{ex.message}&quot;</span>
+26:         <span class="ruby-identifier">exit</span>
+27:       <span class="ruby-keyword kw">end</span>
+28:       
+29:       <span class="ruby-identifier">intersect</span> = <span class="ruby-identifier">s1</span>.<span class="ruby-identifier">intersection</span>(<span class="ruby-identifier">s2</span>)
+30:       
+31:       <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">intersect</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+32:         <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Ctverce se ani nedotykaji.&quot;</span>
+33:         <span class="ruby-identifier">exit</span>
+34:       <span class="ruby-keyword kw">end</span>
+35:       
+36:       <span class="ruby-identifier">union</span> = <span class="ruby-identifier">s1</span>.<span class="ruby-identifier">area</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">s2</span>.<span class="ruby-identifier">area</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">intersect</span>
+37:       
+38:       <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Obsah sjednoceni dvou ctvercu je #{union}.&quot;</span>
+39:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="is-number--method" class="method-detail ">
+				<a name="method-i-is_number%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">is_number?</span><span
+						class="method-args">(variable)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if variable is a number
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="is-number--source">
+<pre>
+    <span class="ruby-comment cmt"># File bin/Uloha2.rb, line 44</span>
+44:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">is_number?</span>(<span class="ruby-identifier">variable</span>)
+45:       <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Float</span>(<span class="ruby-identifier">variable</span>) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">false</span>
+46:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="read-input-method" class="method-detail ">
+				<a name="method-i-read_input"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">read_input</span><span
+						class="method-args">(index, messages)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Asks user for input, reads it and returns an instance of <a
+href="Square.html">Square</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="read-input-source">
+<pre>
+    <span class="ruby-comment cmt"># File bin/Uloha2.rb, line 49</span>
+49:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">read_input</span>(<span class="ruby-identifier">index</span>, <span class="ruby-identifier">messages</span>)
+50:       <span class="ruby-identifier">start</span> = <span class="ruby-identifier">index</span>
+51:       <span class="ruby-identifier">numbers</span> = []
+52:       <span class="ruby-identifier">start</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+53:         <span class="ruby-identifier">print</span> <span class="ruby-identifier">messages</span>[<span class="ruby-identifier">i</span>]
+54:         <span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">start</span>] = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+55:         <span class="ruby-keyword kw">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">is_number?</span>(<span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span><span class="ruby-operator">-</span><span class="ruby-identifier">start</span>]) <span class="ruby-operator">||</span>(<span class="ruby-identifier">i</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">Float</span>(<span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span><span class="ruby-operator">-</span><span class="ruby-identifier">start</span>]) <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>))
+56:           <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;Invalid input&quot;</span>
+57:         <span class="ruby-keyword kw">end</span>
+58:         <span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">start</span>] = <span class="ruby-constant">Float</span>(<span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">start</span>])
+59:       <span class="ruby-keyword kw">end</span>
+60:       <span class="ruby-constant">Square</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">numbers</span>[<span class="ruby-value">1</span>], <span class="ruby-identifier">numbers</span>[<span class="ruby-value">2</span>], <span class="ruby-identifier">numbers</span>[<span class="ruby-value">0</span>])
+61:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

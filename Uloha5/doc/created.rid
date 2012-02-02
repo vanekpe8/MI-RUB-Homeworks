@@ -1,0 +1,9 @@
+Thu, 02 Feb 2012 14:05:20 +0100
+./bin/MinimalCoverage.rb	Thu, 02 Feb 2012 14:05:16 +0100
+./bin/input.txt	Wed, 01 Feb 2012 16:50:44 +0100
+./lib/Fragments.rb	Thu, 02 Feb 2012 13:57:52 +0100
+./lib/Instances.rb	Thu, 02 Feb 2012 13:58:36 +0100
+./lib/InputLoader.rb	Thu, 02 Feb 2012 13:47:24 +0100
+./lib/CoverageSolver.rb	Wed, 01 Feb 2012 16:51:54 +0100
+./test/testInput.txt	Wed, 01 Feb 2012 14:34:30 +0100
+./test/Tests.rb	Thu, 02 Feb 2012 13:55:20 +0100

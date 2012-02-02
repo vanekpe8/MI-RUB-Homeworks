@@ -1,1 +1,1 @@
-Tento repozitáø obsahuje domácí úkoly
+V tomto repozitÃ¡Å™i 

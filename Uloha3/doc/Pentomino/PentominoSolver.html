@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Pentomino::PentominoSolver</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/PentominoSolver_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/PentominoSolver.rb">lib/PentominoSolver.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-find_first_empty_cell">#find_first_empty_cell</a></li>
+					
+					<li><a href="#method-i-recursive_pentomino">#recursive_pentomino</a></li>
+					
+					<li><a href="#method-i-run">#run</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../bin/input1_txt.html">input1.txt</a></li>
+				
+					<li class="file"><a href="../bin/input2_txt.html">input2.txt</a></li>
+				
+					<li class="file"><a href="../bin/input3_txt.html">input3.txt</a></li>
+				
+					<li class="file"><a href="../bin/input4_txt.html">input4.txt</a></li>
+				
+					<li class="file"><a href="../test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="../Pentomino/Grid.html">Pentomino::Grid</a></li>
+				
+					<li><a href="../Pentomino/InputHandling.html">Pentomino::InputHandling</a></li>
+				
+					<li><a href="../Pentomino/InputHandling/Input.html">Pentomino::InputHandling::Input</a></li>
+				
+					<li><a href="../Pentomino/InputHandling/InputLoader.html">Pentomino::InputHandling::InputLoader</a></li>
+				
+					<li><a href="../Pentomino/MainClass.html">Pentomino::MainClass</a></li>
+				
+					<li><a href="../Pentomino/PentominoSolver.html">Pentomino::PentominoSolver</a></li>
+				
+					<li><a href="../Pentomino/Pieces.html">Pentomino::Pieces</a></li>
+				
+					<li><a href="../Pentomino/Pieces/Piece.html">Pentomino::Pieces::Piece</a></li>
+				
+					<li><a href="../Pentomino/Pieces/PieceHolder.html">Pentomino::Pieces::PieceHolder</a></li>
+				
+					<li><a href="../Pentomino/Pieces/PieceVariant.html">Pentomino::Pieces::PieceVariant</a></li>
+				
+					<li><a href="../Pentomino/Tests.html">Pentomino::Tests</a></li>
+				
+					<li><a href="../Pentomino/Tests/GridTests.html">Pentomino::Tests::GridTests</a></li>
+				
+					<li><a href="../Pentomino/Tests/InputTests.html">Pentomino::Tests::InputTests</a></li>
+				
+					<li><a href="../Pentomino/Tests/PieceHolderTests.html">Pentomino::Tests::PieceHolderTests</a></li>
+				
+					<li><a href="../Pentomino/Tests/PieceTests.html">Pentomino::Tests::PieceTests</a></li>
+				
+					<li><a href="../Pentomino/Tests/SolverTests.html">Pentomino::Tests::SolverTests</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Pentomino::PentominoSolver</h1>
+
+		<div id="description">
+			<p>
+This class can recursively solve pentomino problem.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="result-attribute-method" class="method-detail">
+				<a name="result"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">result</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Result <a href="Grid.html">Grid</a> of the given problem.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(grid, pieces)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new instance of <a
+href="PentominoSolver.html">PentominoSolver</a> for a &#8216;grid&#8217;
+and some &#8216;pieces&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PentominoSolver.rb, line 7</span>
+ 7:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">grid</span>, <span class="ruby-identifier">pieces</span>)
+ 8:       <span class="ruby-ivar">@grid</span> = <span class="ruby-identifier">grid</span>
+ 9:       <span class="ruby-ivar">@holder</span> = <span class="ruby-constant">Pieces</span><span class="ruby-operator">::</span><span class="ruby-constant">PieceHolder</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">pieces</span>, <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>, <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">height</span>)
+10:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="run-method" class="method-detail ">
+				<a name="method-i-run"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Runs the solver. Result is stored in &#8216;result&#8217; instance
+variable.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PentominoSolver.rb, line 13</span>
+13:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run</span>
+14:       <span class="ruby-ivar">@result</span> = <span class="ruby-identifier">recursive_pentomino</span>(<span class="ruby-ivar">@grid</span>, <span class="ruby-ivar">@holder</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>)
+15:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="find-first-empty-cell-method" class="method-detail ">
+				<a name="method-i-find_first_empty_cell"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find_first_empty_cell</span><span
+						class="method-args">(grid, address)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method iterates through the &#8216;grid&#8217; from left to right and
+from the botton to the top, until it finds a cell withe value 0.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="find-first-empty-cell-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PentominoSolver.rb, line 62</span>
+62:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">find_first_empty_cell</span>(<span class="ruby-identifier">grid</span>, <span class="ruby-identifier">address</span>)
+63:       <span class="ruby-identifier">x</span> = <span class="ruby-identifier">address</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>
+64:       <span class="ruby-identifier">y</span> = <span class="ruby-identifier">address</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>
+65:       <span class="ruby-comment cmt">#puts &quot;--firstempty------&quot;</span>
+66:       <span class="ruby-keyword kw">while</span>(<span class="ruby-identifier">y</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">height</span>)
+67:         <span class="ruby-keyword kw">while</span>(<span class="ruby-identifier">x</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>)
+68:           <span class="ruby-comment cmt">#puts &quot;x: #{x} y: #{y}&quot;</span>
+69:           <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">grid</span>.<span class="ruby-identifier">grid</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+70:             <span class="ruby-comment cmt">#puts &quot;---------------&quot;</span>
+71:             <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">y</span>*<span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">x</span>
+72:           <span class="ruby-keyword kw">end</span>
+73:           <span class="ruby-identifier">x</span> = <span class="ruby-identifier">x</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+74:         <span class="ruby-keyword kw">end</span>
+75:         <span class="ruby-identifier">x</span> = <span class="ruby-value">0</span>
+76:         <span class="ruby-identifier">y</span> = <span class="ruby-identifier">y</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+77:       <span class="ruby-keyword kw">end</span>
+78:       <span class="ruby-identifier">y</span>*<span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">x</span>
+79:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="recursive-pentomino-method" class="method-detail ">
+				<a name="method-i-recursive_pentomino"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">recursive_pentomino</span><span
+						class="method-args">(grid, piece_holder, placed_pieces, check_ptr_addr)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method recursively finds a solution for pentomino.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="recursive-pentomino-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PentominoSolver.rb, line 23</span>
+23:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">recursive_pentomino</span>(<span class="ruby-identifier">grid</span>, <span class="ruby-identifier">piece_holder</span>, <span class="ruby-identifier">placed_pieces</span>, <span class="ruby-identifier">check_ptr_addr</span>)
+24:       <span class="ruby-identifier">tmp</span> = <span class="ruby-identifier">find_first_empty_cell</span>(<span class="ruby-identifier">grid</span>, <span class="ruby-identifier">check_ptr_addr</span>)
+25:       <span class="ruby-identifier">checkX</span> = <span class="ruby-identifier">tmp</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>
+26:       <span class="ruby-identifier">checkY</span> = <span class="ruby-identifier">tmp</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>
+27:       <span class="ruby-identifier">insX</span> = <span class="ruby-identifier">checkX</span>
+28:       <span class="ruby-identifier">insY</span> = <span class="ruby-identifier">checkY</span>
+29:       <span class="ruby-identifier">pieces</span> = <span class="ruby-identifier">piece_holder</span>.<span class="ruby-identifier">pieces</span>
+30:       
+31:       <span class="ruby-keyword kw">while</span>(<span class="ruby-identifier">insX</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span>)
+32:         <span class="ruby-identifier">pieces</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">piece</span><span class="ruby-operator">|</span>
+33:           <span class="ruby-keyword kw">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">piece</span>.<span class="ruby-identifier">placed</span>)
+34:             <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">variants</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">variant</span><span class="ruby-operator">|</span>
+35:               <span class="ruby-comment cmt">#puts &quot;--------&quot;</span>
+36:               <span class="ruby-comment cmt">#variant.printVariant</span>
+37:               <span class="ruby-comment cmt">#puts &quot;can_place_to(#{insX}, #{insY})? #{grid.can_place?(variant,insX,insY)}&quot;</span>
+38:               
+39:               <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">grid</span>.<span class="ruby-identifier">can_place?</span>(<span class="ruby-identifier">variant</span>, <span class="ruby-identifier">insX</span>, <span class="ruby-identifier">insY</span>))
+40:                 <span class="ruby-identifier">g1</span> = <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">clone</span>
+41:                 <span class="ruby-identifier">g1</span>.<span class="ruby-identifier">place</span>(<span class="ruby-identifier">variant</span>, <span class="ruby-identifier">insX</span>, <span class="ruby-identifier">insY</span>)
+42:                 <span class="ruby-identifier">piece_holder</span>.<span class="ruby-identifier">set_used</span>(<span class="ruby-identifier">piece</span>)
+43:                 <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">g1</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">placed_pieces</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">pieces</span>.<span class="ruby-identifier">count</span>)
+44:                 <span class="ruby-identifier">result</span> = <span class="ruby-identifier">recursive_pentomino</span>(<span class="ruby-identifier">g1</span>, <span class="ruby-identifier">piece_holder</span>, <span class="ruby-identifier">placed_pieces</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">checkY</span> * <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">checkX</span>)
+45:                 <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+46:                   <span class="ruby-identifier">piece_holder</span>.<span class="ruby-identifier">set_unused</span>(<span class="ruby-identifier">piece</span>)
+47:                 <span class="ruby-keyword kw">else</span>
+48:                   <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>
+49:                 <span class="ruby-keyword kw">end</span>
+50:               <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt">#end if</span>
+51:             <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt">#end variants.each</span>
+52:           <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt">#end if</span>
+53:         <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt">#end pieces.each</span>
+54:         <span class="ruby-identifier">insX</span> = <span class="ruby-identifier">insX</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+55:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">insX</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">checkX</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">piece_holder</span>.<span class="ruby-identifier">max_width</span>) <span class="ruby-comment cmt"># there is no piece, which could cover the gap between insX and checkX.</span>
+56:       <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt">#end while</span>
+57:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+58:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

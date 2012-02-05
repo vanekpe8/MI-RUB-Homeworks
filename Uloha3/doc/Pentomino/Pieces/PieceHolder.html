@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Pentomino::Pieces::PieceHolder</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/Pieces_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/Pieces.rb">lib/Pieces.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-precalculate_max_width">#precalculate_max_width</a></li>
+					
+					<li><a href="#method-i-set_unused">#set_unused</a></li>
+					
+					<li><a href="#method-i-set_used">#set_used</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../bin/input1_txt.html">input1.txt</a></li>
+				
+					<li class="file"><a href="../../bin/input2_txt.html">input2.txt</a></li>
+				
+					<li class="file"><a href="../../bin/input3_txt.html">input3.txt</a></li>
+				
+					<li class="file"><a href="../../bin/input4_txt.html">input4.txt</a></li>
+				
+					<li class="file"><a href="../../test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="../../Pentomino/Grid.html">Pentomino::Grid</a></li>
+				
+					<li><a href="../../Pentomino/InputHandling.html">Pentomino::InputHandling</a></li>
+				
+					<li><a href="../../Pentomino/InputHandling/Input.html">Pentomino::InputHandling::Input</a></li>
+				
+					<li><a href="../../Pentomino/InputHandling/InputLoader.html">Pentomino::InputHandling::InputLoader</a></li>
+				
+					<li><a href="../../Pentomino/MainClass.html">Pentomino::MainClass</a></li>
+				
+					<li><a href="../../Pentomino/PentominoSolver.html">Pentomino::PentominoSolver</a></li>
+				
+					<li><a href="../../Pentomino/Pieces.html">Pentomino::Pieces</a></li>
+				
+					<li><a href="../../Pentomino/Pieces/Piece.html">Pentomino::Pieces::Piece</a></li>
+				
+					<li><a href="../../Pentomino/Pieces/PieceHolder.html">Pentomino::Pieces::PieceHolder</a></li>
+				
+					<li><a href="../../Pentomino/Pieces/PieceVariant.html">Pentomino::Pieces::PieceVariant</a></li>
+				
+					<li><a href="../../Pentomino/Tests.html">Pentomino::Tests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/GridTests.html">Pentomino::Tests::GridTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/InputTests.html">Pentomino::Tests::InputTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/PieceHolderTests.html">Pentomino::Tests::PieceHolderTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/PieceTests.html">Pentomino::Tests::PieceTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/SolverTests.html">Pentomino::Tests::SolverTests</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Pentomino::Pieces::PieceHolder</h1>
+
+		<div id="description">
+			<p>
+This class is used to keep track of placed and not placed pieces
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="max-width-attribute-method" class="method-detail">
+				<a name="max_width"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">max_width</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Current maximum width among all unused pieces.
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="pieces-attribute-method" class="method-detail">
+				<a name="pieces"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">pieces</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Current array of pieces.
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="widths-attribute-method" class="method-detail">
+				<a name="widths"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">widths</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+An array that keeps track of widths. Its contents should not be changed
+externaly.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(pieces, grid_width, grid_height)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new instance of <a href="PieceHolder.html">PieceHolder</a>.
+Parateter &#8216;pieces&#8217; is supposed to be an array of <a
+href="Piece.html">Piece</a> instances.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 148</span>
+148:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">pieces</span>, <span class="ruby-identifier">grid_width</span>, <span class="ruby-identifier">grid_height</span>)
+149:         <span class="ruby-ivar">@widths</span> = []
+150:         (<span class="ruby-identifier">grid_width</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+151:           <span class="ruby-ivar">@widths</span>[<span class="ruby-identifier">idx</span>] = <span class="ruby-value">0</span>
+152:         <span class="ruby-keyword kw">end</span>
+153:         <span class="ruby-ivar">@grid_width</span> = <span class="ruby-identifier">grid_width</span>
+154:         <span class="ruby-ivar">@grid_height</span> = <span class="ruby-identifier">grid_height</span>
+155:         <span class="ruby-ivar">@max_width</span> = <span class="ruby-value">0</span>
+156:         <span class="ruby-ivar">@pieces</span> = <span class="ruby-identifier">pieces</span>
+157:         <span class="ruby-identifier">precalculate_max_width</span>(<span class="ruby-identifier">pieces</span>)
+158:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="set-unused-method" class="method-detail ">
+				<a name="method-i-set_unused"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">set_unused</span><span
+						class="method-args">(piece)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sets the given &#8216;piece&#8217; as unused and updates the maximum width
+and piece&#8217;s attribute &#8216;placed&#8217;. The maximum width is
+always the greatest width or height among all unused pieces.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="set-unused-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 189</span>
+189:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_unused</span>(<span class="ruby-identifier">piece</span>)
+190:         <span class="ruby-identifier">var</span> = <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">variants</span>[<span class="ruby-value">0</span>]
+191:         <span class="ruby-ivar">@max_width</span> = <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@max_width</span>
+192:         <span class="ruby-ivar">@max_width</span> = <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@max_width</span>
+193:         <span class="ruby-ivar">@widths</span>[<span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+194:         <span class="ruby-ivar">@widths</span>[<span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span>
+195:         <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">placed</span> = <span class="ruby-keyword kw">false</span>
+196:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="set-used-method" class="method-detail ">
+				<a name="method-i-set_used"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">set_used</span><span
+						class="method-args">(piece)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sets the given &#8216;piece&#8217; as used and updates the maximum width
+and piece&#8217;s attribute &#8216;placed&#8217;. The maximum width is
+always the greatest width or height among all unused pieces.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="set-used-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 162</span>
+162:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_used</span>(<span class="ruby-identifier">piece</span>)
+163:         <span class="ruby-identifier">var</span> = <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">variants</span>[<span class="ruby-value">0</span>]
+164:         <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span>)
+165:           <span class="ruby-identifier">max</span> = <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span>
+166:           <span class="ruby-identifier">min</span> = <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span>
+167:         <span class="ruby-keyword kw">else</span>
+168:           <span class="ruby-identifier">max</span> = <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span>
+169:           <span class="ruby-identifier">min</span> = <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span>
+170:         <span class="ruby-keyword kw">end</span>
+171:         <span class="ruby-ivar">@widths</span>[<span class="ruby-identifier">min</span>] <span class="ruby-operator">-=</span> <span class="ruby-value">1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">min</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">max</span>
+172:         <span class="ruby-ivar">@widths</span>[<span class="ruby-identifier">max</span>] <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+173:         <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">placed</span> = <span class="ruby-keyword kw">true</span>
+174:         <span class="ruby-keyword kw">if</span>(<span class="ruby-ivar">@widths</span>[<span class="ruby-ivar">@max_width</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+175:           <span class="ruby-identifier">changed</span> = <span class="ruby-keyword kw">false</span>
+176:           (<span class="ruby-ivar">@max_width</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+177:             <span class="ruby-keyword kw">if</span>(<span class="ruby-ivar">@widths</span>[<span class="ruby-identifier">index</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+178:               <span class="ruby-ivar">@max_width</span> = <span class="ruby-identifier">index</span>
+179:               <span class="ruby-identifier">changed</span> = <span class="ruby-keyword kw">true</span>
+180:               <span class="ruby-keyword kw">break</span>
+181:             <span class="ruby-keyword kw">end</span>
+182:           <span class="ruby-keyword kw">end</span>
+183:           <span class="ruby-ivar">@max_width</span> = <span class="ruby-value">0</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">changed</span>
+184:         <span class="ruby-keyword kw">end</span>
+185:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="precalculate-max-width-method" class="method-detail ">
+				<a name="method-i-precalculate_max_width"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">precalculate_max_width</span><span
+						class="method-args">(pieces)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Performs initial pre-calculations. Further updates are trivial.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="precalculate-max-width-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 201</span>
+201:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">precalculate_max_width</span>(<span class="ruby-identifier">pieces</span>)
+202:         
+203:         <span class="ruby-identifier">pieces</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">piece</span><span class="ruby-operator">|</span>
+204:           
+205:           <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;A Piece must have at least one variant&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">variants</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+206:           <span class="ruby-identifier">var</span> = <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">variants</span>[<span class="ruby-value">0</span>]
+207:           <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;A piece cannot have a zero area.&quot;</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+208:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Piece with 'width' = #{var.width} and 'height' = #{var.height} cannot possibly fit into the grid.&quot;</span> <span class="ruby-keyword kw">if</span>((<span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@grid_height</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_height</span>)) <span class="ruby-operator">||</span>
+209:                                                                                                                    (<span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@grid_height</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_height</span>)) <span class="ruby-operator">||</span>
+210:                                                                                                                    (<span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@grid_height</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_height</span>)) <span class="ruby-operator">||</span>
+211:                                                                                                                    (<span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@grid_height</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">var</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_width</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">var</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@grid_height</span>)))
+212:           <span class="ruby-identifier">set_unused</span>(<span class="ruby-identifier">piece</span>)
+213:         <span class="ruby-keyword kw">end</span>
+214:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

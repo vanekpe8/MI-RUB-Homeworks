@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Pentomino::Pieces::PieceVariant</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/Pieces_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/Pieces.rb">lib/Pieces.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-%3D%3D">#==</a></li>
+					
+					<li><a href="#method-i-clone">#clone</a></li>
+					
+					<li><a href="#method-i-cloneWithNewID">#cloneWithNewID</a></li>
+					
+					<li><a href="#method-i-eql%3F">#eql?</a></li>
+					
+					<li><a href="#method-i-fill">#fill</a></li>
+					
+					<li><a href="#method-i-flip">#flip</a></li>
+					
+					<li><a href="#method-i-printVariant">#printVariant</a></li>
+					
+					<li><a href="#method-i-rotate">#rotate</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../bin/input1_txt.html">input1.txt</a></li>
+				
+					<li class="file"><a href="../../bin/input2_txt.html">input2.txt</a></li>
+				
+					<li class="file"><a href="../../bin/input3_txt.html">input3.txt</a></li>
+				
+					<li class="file"><a href="../../bin/input4_txt.html">input4.txt</a></li>
+				
+					<li class="file"><a href="../../test/testInput_txt.html">testInput.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="../../Pentomino/Grid.html">Pentomino::Grid</a></li>
+				
+					<li><a href="../../Pentomino/InputHandling.html">Pentomino::InputHandling</a></li>
+				
+					<li><a href="../../Pentomino/InputHandling/Input.html">Pentomino::InputHandling::Input</a></li>
+				
+					<li><a href="../../Pentomino/InputHandling/InputLoader.html">Pentomino::InputHandling::InputLoader</a></li>
+				
+					<li><a href="../../Pentomino/MainClass.html">Pentomino::MainClass</a></li>
+				
+					<li><a href="../../Pentomino/PentominoSolver.html">Pentomino::PentominoSolver</a></li>
+				
+					<li><a href="../../Pentomino/Pieces.html">Pentomino::Pieces</a></li>
+				
+					<li><a href="../../Pentomino/Pieces/Piece.html">Pentomino::Pieces::Piece</a></li>
+				
+					<li><a href="../../Pentomino/Pieces/PieceHolder.html">Pentomino::Pieces::PieceHolder</a></li>
+				
+					<li><a href="../../Pentomino/Pieces/PieceVariant.html">Pentomino::Pieces::PieceVariant</a></li>
+				
+					<li><a href="../../Pentomino/Tests.html">Pentomino::Tests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/GridTests.html">Pentomino::Tests::GridTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/InputTests.html">Pentomino::Tests::InputTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/PieceHolderTests.html">Pentomino::Tests::PieceHolderTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/PieceTests.html">Pentomino::Tests::PieceTests</a></li>
+				
+					<li><a href="../../Pentomino/Tests/SolverTests.html">Pentomino::Tests::SolverTests</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Pentomino::Pieces::PieceVariant</h1>
+
+		<div id="description">
+			<p>
+This class represents a configuration variant of a <a
+href="Piece.html">Piece</a>.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="width-attribute-method" class="method-detail">
+				<a name="width"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">width</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Width of configuration grid
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="height-attribute-method" class="method-detail">
+				<a name="height"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">height</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Height of configuration grid
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="configuration-attribute-method" class="method-detail">
+				<a name="configuration"></a>
+				
+				<a name="configuration="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">configuration</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Configuration grid (2D array)
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(width, height)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new instance of PieceWariant
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Pieces.rb, line 42</span>
+42:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">width</span>, <span class="ruby-identifier">height</span>)
+43:         <span class="ruby-ivar">@width</span> = <span class="ruby-identifier">width</span>
+44:         <span class="ruby-ivar">@height</span> = <span class="ruby-identifier">height</span>
+45:         <span class="ruby-ivar">@configuration</span> = []
+46:         <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+47:           <span class="ruby-ivar">@configuration</span>[<span class="ruby-identifier">idx</span>] = []
+48:         <span class="ruby-keyword kw">end</span>
+49:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%3D%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">==</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if this <a href="PieceVariant.html">PieceVariant</a> is equal
+to the &#8216;other&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Pieces.rb, line 87</span>
+87:       <span class="ruby-keyword kw">def</span> <span class="ruby-operator">==</span>(<span class="ruby-identifier">other</span>)
+88:         <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">instance_of?</span>(<span class="ruby-constant">PieceVariant</span>))
+89:           <span class="ruby-ivar">@configuration</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">configuration</span>
+90:         <span class="ruby-keyword kw">else</span>
+91:           <span class="ruby-keyword kw">false</span>
+92:         <span class="ruby-keyword kw">end</span>
+93:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="clone-method" class="method-detail ">
+				<a name="method-i-clone"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">clone</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a deep copy of this <a href="PieceVariant.html">PieceVariant</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="clone-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 101</span>
+101:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">clone</span>
+102:         <span class="ruby-identifier">result</span> = <span class="ruby-constant">PieceVariant</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@width</span>, <span class="ruby-ivar">@height</span>)
+103:         <span class="ruby-ivar">@height</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hIdx</span><span class="ruby-operator">|</span>
+104:           <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wIdx</span><span class="ruby-operator">|</span>
+105:             <span class="ruby-identifier">result</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>] = <span class="ruby-ivar">@configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>]
+106:           <span class="ruby-keyword kw">end</span>
+107:         <span class="ruby-keyword kw">end</span>
+108:         <span class="ruby-identifier">result</span>
+109:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="clone-ith-ew--method" class="method-detail ">
+				<a name="method-i-cloneWithNewID"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">cloneWithNewID</span><span
+						class="method-args">(id)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a deep copy of this <a href="PieceVariant.html">PieceVariant</a>
+with different piece ID
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="clone-ith-ew--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 112</span>
+112:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cloneWithNewID</span>(<span class="ruby-identifier">id</span>)
+113:         <span class="ruby-identifier">result</span> = <span class="ruby-constant">PieceVariant</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@width</span>, <span class="ruby-ivar">@height</span>)
+114:         <span class="ruby-ivar">@height</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hIdx</span><span class="ruby-operator">|</span>
+115:           <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wIdx</span><span class="ruby-operator">|</span>
+116:             <span class="ruby-keyword kw">if</span>(<span class="ruby-ivar">@configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>] <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>)
+117:               <span class="ruby-identifier">result</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>] = <span class="ruby-identifier">id</span>
+118:             <span class="ruby-keyword kw">else</span>
+119:               <span class="ruby-identifier">result</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>] = <span class="ruby-value">0</span>
+120:             <span class="ruby-keyword kw">end</span>
+121:           <span class="ruby-keyword kw">end</span>
+122:         <span class="ruby-keyword kw">end</span>
+123:         <span class="ruby-identifier">result</span>
+124:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="eql--method" class="method-detail ">
+				<a name="method-i-eql%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">eql?</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if this <a href="PieceVariant.html">PieceVariant</a> is equal
+to the &#8216;other&#8217;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="eql--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Pieces.rb, line 96</span>
+96:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">other</span>)
+97:         <span class="ruby-keyword kw">self</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>
+98:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="fill-method" class="method-detail ">
+				<a name="method-i-fill"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">fill</span><span
+						class="method-args">(tokens, id)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method fills the configuration grid from the bottom left to the top
+right corner. Parameter &#8216;tokens&#8217; must be an array of numbers,
+its length must be equal to multiplication of this <a
+href="PieceVariant.html">PieceVariant</a> width and height. Allowed values
+are 0 and 1. &#8216;id&#8217; will be placed to such positions in the
+configuration grid, that correspond to some 1 in the &#8216;tokens&#8217;
+array. Remaining positions will be filled by 0. This is due to recognition
+of placed pieces when the result of pentomino is visualized.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="fill-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Pieces.rb, line 55</span>
+55:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">fill</span>(<span class="ruby-identifier">tokens</span>, <span class="ruby-identifier">id</span>)
+56:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;PieceVariant: Invalid number of tokens given (needed #{@width * @height}, given #{tokens.length})&quot;</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">!=</span> <span class="ruby-ivar">@width</span> * <span class="ruby-ivar">@height</span>)
+57:         <span class="ruby-ivar">@height</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hIdx</span><span class="ruby-operator">|</span>
+58:           <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wIdx</span><span class="ruby-operator">|</span>
+59:             <span class="ruby-ivar">@configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>] = <span class="ruby-identifier">tokens</span>[<span class="ruby-identifier">hIdx</span>*<span class="ruby-ivar">@width</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">wIdx</span>] * <span class="ruby-identifier">id</span>
+60:           <span class="ruby-keyword kw">end</span>
+61:         <span class="ruby-keyword kw">end</span>
+62:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="flip-method" class="method-detail ">
+				<a name="method-i-flip"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">flip</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method &#8216;flips the piece&#8217; (creates a mirror image of this
+<a href="PieceVariant.html">PieceVariant</a>)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="flip-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Pieces.rb, line 76</span>
+76:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">flip</span>
+77:         <span class="ruby-identifier">flipped</span> = <span class="ruby-constant">PieceVariant</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@width</span>, <span class="ruby-ivar">@height</span>)
+78:         <span class="ruby-ivar">@height</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hIdx</span><span class="ruby-operator">|</span>
+79:           <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wIdx</span><span class="ruby-operator">|</span>
+80:             <span class="ruby-identifier">flipped</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>] = <span class="ruby-ivar">@configuration</span>[<span class="ruby-ivar">@width</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">wIdx</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">hIdx</span>]
+81:           <span class="ruby-keyword kw">end</span>
+82:         <span class="ruby-keyword kw">end</span>
+83:         <span class="ruby-identifier">flipped</span>
+84:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="print-ariant-method" class="method-detail ">
+				<a name="method-i-printVariant"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">printVariant</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="print-ariant-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Pieces.rb, line 126</span>
+126:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">printVariant</span>
+127:         (<span class="ruby-ivar">@height</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hIdx</span><span class="ruby-operator">|</span>
+128:         <span class="ruby-identifier">line</span> = <span class="ruby-value str">&quot;&quot;</span>
+129:         <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wIdx</span><span class="ruby-operator">|</span>
+130:           <span class="ruby-identifier">line</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;#{@configuration[wIdx][hIdx]} &quot;</span>
+131:         <span class="ruby-keyword kw">end</span>
+132:         <span class="ruby-identifier">print</span> <span class="ruby-identifier">line</span>
+133:       <span class="ruby-keyword kw">end</span>
+134:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="rotate-method" class="method-detail ">
+				<a name="method-i-rotate"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rotate</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This mehod &#8216;rotates the piece clockwise&#8217; (creates clockwise
+rotated image of this <a href="PieceVariant.html">PieceVariant</a>).
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rotate-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Pieces.rb, line 65</span>
+65:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rotate</span>
+66:         <span class="ruby-identifier">rotated</span> = <span class="ruby-constant">PieceVariant</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@height</span>, <span class="ruby-ivar">@width</span>)
+67:         <span class="ruby-ivar">@height</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hIdx</span><span class="ruby-operator">|</span>
+68:           (<span class="ruby-ivar">@width</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wIdx</span><span class="ruby-operator">|</span>
+69:             <span class="ruby-identifier">rotated</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">hIdx</span>][<span class="ruby-ivar">@width</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">wIdx</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] = <span class="ruby-ivar">@configuration</span>[<span class="ruby-identifier">wIdx</span>][<span class="ruby-identifier">hIdx</span>]
+70:           <span class="ruby-keyword kw">end</span>
+71:         <span class="ruby-keyword kw">end</span>
+72:         <span class="ruby-identifier">rotated</span>
+73:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

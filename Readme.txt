@@ -8,6 +8,38 @@ Tuto úlohu jsem již sice odevzdával, ale přesto jsem aspoň upravil její st
 ========
 Vstup není čten ze souboru ale zadává se interaktivně.
 
+Úloha 3
+========
+Pentomino bere vstup ze souboru.
+
+Formát vstupního souboru je (začátek a konec souboru označet řádkou pomlček):
+-----------------
+[šířka pole] [výška pole]
+
+[šířka 1. dílku] [výška 1. dílku] [kolikrát je 1. dílek k dispozici]
+[konfigurace 1. dílku]
+
+[šířka 2. dílku] [výška 2. dílku] [kolikrát je 2. dílek k dispozici]
+[konfigurace 2. dílku]
+
+...
+
+[šířka N. dílku] [výška N. dílku] [kolikrát je N. dílek k dispozici]
+[konfigurace N. dílku]
+
+-----------------
+
+Šířka pole a výška pole jsou rozměry hrací plochy pentomina.
+
+Konfigurace dílku udává jeho tvar. Skládá se z číselných hodnot 1 a 0 (1 - dílek, 0 - prázdný prostor).
+Chceme-li definovat tvar L o rovměrech 3x2, který bude k dispozici 2-krát, můžeme jej definovat takto:
+
+2 3 2
+1 0
+1 0
+1 1
+
+
 Úloha 4
 ========
 Pokud jsem správně pochopil zadání této úlohy, měla být výsledkem aplikace, která jakoukoliv vstupní zprávu dešifruje tak, že ASCII kód každého znaku sníží o konstantu 7 (to je klíč, který lze vypozorovat ze vzorového vstupu a výstupu).
